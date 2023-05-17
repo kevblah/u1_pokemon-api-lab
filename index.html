@@ -13,23 +13,54 @@
     <title>Kevin's Pokedex</title>
 </head>
 <body>
-    <div class="container">
-        <div class="top-bar">
-            <div class="circle" id="top-circle"></div>
-            <input class="search" placeholder="Search" type="text"/>
+    <!-- Explore Page -->
+    <div class="explore-page">
+        <div class="explore-top-container">
+            <input id="search" placeholder="Search" type="text">
         </div>
-        <div class="photo">
-            <img id="mainphoto"/>
+        <div class="explore-center-container">
+            <div class="explore-grid">
+                <div class="explore-grid-div explore-grid-div-big"></div> 
+                <div class="explore-grid-div"></div>
+                <div class="explore-grid-div"></div>
+                <div class="explore-grid-div"></div>
+                <div class="explore-grid-div"></div>
+                <div class="explore-grid-div"></div>
+                <div class="explore-grid-div"></div>
+                <div class="explore-grid-div"></div>
+                <div class="explore-grid-div"></div>
+                <div class="explore-grid-div"></div>
+            </div>
         </div>
-        <div class="bottom-bar">
-            <div class="likes"><span id="likes-display"></span></div>
-            <div class="name"><span id="bottom-name"></span></div>
-            <div class="caption" id="caption-content"></div>
-            <div class="circle" id="bottom-circle"></div>
+        <div class="explore-bottom-container">
+            <img id="explore-bottom-jeremy" src="images/jeremy.png"/>
         </div>
-        <div class="jeremy"></div>
-        <div class="name" id="top-name"></div>
-
+    </div>
+    <!-- Profile Page -->
+    <div class="profile-page">
+        <div class="profile-top-container">
+            <div class="profile-top-name"></div>
+            <div class="profile-picture"></div>
+            <div class="profile-bottom-name"></div>
+            <div class="profile-description"></div>
+        </div>
+        <div class="profile-center-container">
+            <div class="profile-grid">
+                <div class="profile-grid-div"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"/></div>
+                <div class="profile-grid-div"></div>
+                <div class="profile-grid-div"></div>
+                <div class="profile-grid-div"></div>
+                <div class="profile-grid-div"></div>
+                <div class="profile-grid-div"></div>
+                <div class="profile-grid-div"></div>
+                <div class="profile-grid-div"></div>
+                <div class="profile-grid-div"></div>
+            </div>
+        </div>
+        <div class="profile-bottom-container">
+            <img id="profile-bottom-search-button" src="./images/search-button-thin.png"/>
+            <img id="profile-bottom-jeremy" src="images/jeremy.png"/>
+        </div>
     </div>
 </body>
 </html>
