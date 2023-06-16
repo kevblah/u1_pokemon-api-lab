@@ -1,54 +1,23 @@
-## SEIR 0508
+# Pokédex
 
-### PokeAPI lab
+![Pokédex](https://github.com/kevinleet/pokedex/blob/main/images/screenshot.png)
 
+This is a Pokédex application designed to resemble the Instagram interface on a mobile device. It allows users to search for Pokémon and view their profiles.
 
-For this lab lets create our own Pokedex by making an Axios call to the PokeAPI!
-Lets first create an html file, attach in our JS Script file and the Axios library, and enter in a search bar and button to submit in our API call
-We can put in some empty HTML elements as well to populate with our response data, in this case just an H2 and an Image, but we can put in as much as we want once we get our calls made. Scaffold in a CSS file to add some style once the data is rendered on screen too!
+## How to Use
 
+1. Open the Pokédex in your web browser.
+2. The interface is divided into two pages: Explore and Profile.
+3. Explore Page:
+   - Displays a grid of random dog pictures.
+   - To switch to the Profile Page, enter a Pokémon name in the search field and press Enter.
+4. Profile Page:
+   - Shows the profile of the searched Pokémon.
+   - Includes the Pokémon's name, description, and profile picture.
+   - Each profile grid displays a random Pokémon image and background.
+   - To switch back to the Explore Page, click the search button at the bottom.
+5. The Pokédex retrieves data from the PokeAPI to populate the profiles and generate random images and backgrounds.
 
-Explore the https://pokeapi.co/ API with ThunderClient to see what types of endpoints are available, and what your data will look like
+## Acknowledgments
 
-You may need to Map through and run some conditionals for some peices of information (abilities, types...) if you want to put in additional peices of API data 
-
-```html
-<form>
-    <input type="text"  value="" placeholder="Choose your pokemon!"  id="inputBar">
-    <input type="button"  value="Click here" id="searchButton">
-</form>
-
-<h2 id="pokemonName"> </h2>
-<img id="pokemonImage"/>
-
- 
-```
-
-We'll need to Get some DOM elements, then run our Axios call to make the API call.
-Once we have our data pulled and logged, we can render it on screen.
-By wrapping our function up in a button's callback, we will only trigger it when the button is clicked, and the input is entered
-
-```js
-let button = document.querySelector("#searchButton")
-
-button.addEventListener('click', async () => {
-
-    let pokemonName = document.querySelector("#pokemonName")
-    let pokemonImage = document.querySelector("#pokemonImage")
-    //where does this need to be scoped?
-    let textInput = document.querySelector("#inputBar").value
-        
-
-    //Axios call goes here
-    //remember to use Async and Await!
-    //DOM Setters go here
-
-}
-)
-
-```
-
-Once you have the initial data rendered, try to add as much as possible. We can search Pokemon by names and numbers, can we also search for Moves, Berries, and other information?
-
-
-Finally, this is a chance to really explore your styling skills. Be sure to create some wireframes to work with before creating something you can really show off, and have fun with!
+This pokedex was created by Kevin Li. Feel free to use, modify, and distribute this code as you wish. Enjoy playing!
